@@ -1,0 +1,14 @@
+extends layout
+
+block layout-content
+  div.View.UserView
+    h1.Banner Success! Your XRP has been sent.
+    div.Message
+      div.Title
+        h3 Making Us the Best
+        h1 XPRING Profile
+      pre.Details=JSON.stringify(userProfile, null, 2)
+    div.NavButtons
+      a(href="/user")
+        div.NavButton Log in
+        
